@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/linearLayout"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="28dp"
+    android:layout_alignParentLeft="true">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter your weight in Kilograms"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edTxtKg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Weight (KG)"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnKG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="cnvPounds"
+        android:text="Convert to Pounds" />
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_below="@+id/linearLayout"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="34dp"
+    android:layout_alignParentLeft="true">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter your weight in Pounds"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edtTxtLbs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Weight (lbs)"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnPound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="cnvKgs"
+        android:text="Convert to Kilograms" />
+</LinearLayout>
+</RelativeLayout>
